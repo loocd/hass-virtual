@@ -150,8 +150,6 @@ class VirtualLight(VirtualEntity, LightEntity):
     def color_temp_kelvin(self) -> int | None:
         return self._attr_color_temp_kelvin if self._attr_is_on else None
 
-    # -------------------------------------------------------------------------
-
     def _create_state(self, config):
         super()._create_state(config)
 
